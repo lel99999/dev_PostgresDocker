@@ -14,6 +14,7 @@ services:
 #     - "5432:5432"
     networks:
       vresearchnet:
+        alias: postgres9.local
         ipv4_address: 10.0.1.9
 
   postgres10:
@@ -29,6 +30,7 @@ services:
 #     - "5432:5432"
     networks:
       vresearchnet:
+        alias: postgres10.local
         ipv4_address: 10.0.1.10
 #   depends_on:
 #     - <dependency>
@@ -46,6 +48,7 @@ services:
 #     - "5432:5432"
     networks:
       vresearchnet:
+        alias: postgres11.local
         ipv4_address: 10.0.1.11
 #   depends_on:
 #     - <dependency>
@@ -63,6 +66,7 @@ services:
 #     - "5432:5432"
     networks:
       vresearchnet:
+        alias: postgres12.local
         ipv4_address: 10.0.1.12
 #   depends_on:
 #     - <dependency>
@@ -80,6 +84,7 @@ services:
 #     - "5432:5432"
     networks:
       vresearchnet:
+        alias: postgres13.local
         ipv4_address: 10.0.1.13
 #   depends_on:
 #     - <dependency>
@@ -96,6 +101,7 @@ services:
 #     - "5432:5432"
     networks:
       vresearchnet:
+        alias: postgres14.local
         ipv4_address: 10.0.1.14
 #   depends_on:
 #     - <dependency>
