@@ -6,6 +6,7 @@ Postgresql Testing with Containers
 
 ```
 $docker build -t image1 --target img1 .
+```
 
 
 #### Build Multiple Images with docker-compose
