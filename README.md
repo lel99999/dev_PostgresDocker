@@ -10,8 +10,8 @@ $docker build -t image1 --target img1 .
 
 
 #### Build Multiple Images with docker-compose
-- add target:
-'''
+- add target: <br/>
+```
 version: '3.4'
 services:
   img1:
