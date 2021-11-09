@@ -2,11 +2,7 @@ version: "3.3"
 
 services:
   postgres9:
-# vanilla image
-#   image: "postgres:9.6"
-    build:
-      context: ./postgres9.x
-      dockerfile: Dockerfile
+    image: "postgres:9.6"
     hostname: postgres9.local
     environment:
       POSTGRES_PASSWORD: "password9"
