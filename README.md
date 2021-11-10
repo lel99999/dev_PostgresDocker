@@ -32,3 +32,5 @@ services:
       context: .
       target: img2
 ```
+#### Issues with MacOS Docker Networking
+- basic docker-compose files creating networks and assigning IPAddresses working on Ubuntu host, not working correctly on Mac
