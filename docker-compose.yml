@@ -9,6 +9,7 @@ services:
       dockerfile: Dockerfile
     hostname: postgres9.local
     environment:
+      SSH_AUTH_SOCK: "/run/host-services/ssh-auth.sock"
       POSTGRES_PASSWORD: "password9"
     volumes:
       - "./postgres9.x/postgres.conf:/usr/local/etc/postgres/postgres.conf"
@@ -27,6 +28,7 @@ services:
     image: "postgres:10.14"
     hostname: postgres10.local
     environment:
+      SSH_AUTH_SOCK: "/run/host-services/ssh-auth.sock"
       POSTGRES_PASSWORD: "password10"
     volumes:
       - "./postgres10.x/postgres.conf:/usr/local/etc/postgres/postgres.conf"
@@ -47,6 +49,7 @@ services:
     image: "postgres:11.13"
     hostname: postgres11.local
     environment:
+      SSH_AUTH_SOCK: "/run/host-services/ssh-auth.sock"
       POSTGRES_PASSWORD: "password11"
     volumes:
       - "./postgres11.x/postgres.conf:/usr/local/etc/postgres/postgres.conf"
@@ -67,6 +70,7 @@ services:
     image: "postgres:12.8"
     hostname: postgres12.local
     environment:
+      SSH_AUTH_SOCK: "/run/host-services/ssh-auth.sock"
       POSTGRES_PASSWORD: "password12"
     volumes:
       - "./postgres12.x/postgres.conf:/usr/local/etc/postgres/postgres.conf"
@@ -87,6 +91,7 @@ services:
     image: "postgres:13.4"
     hostname: postgres13.local
     environment:
+      SSH_AUTH_SOCK: "/run/host-services/ssh-auth.sock"
       POSTGRES_PASSWORD: "password13"
     volumes:
       - "./postgres13.x/postgres.conf:/usr/local/etc/postgres/postgres.conf"
@@ -106,6 +111,7 @@ services:
   postgres14:
     image: "postgres:14"
     environment:
+      SSH_AUTH_SOCK: "/run/host-services/ssh-auth.sock"
       POSTGRES_PASSWORD: "password14"
     volumes:
       - "./postgres14.x/postgres.conf:/usr/local/etc/postgres/postgres.conf"
