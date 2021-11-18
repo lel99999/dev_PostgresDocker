@@ -1,0 +1,4 @@
+.git
+.cache
+**/postgres9.x/data
+
